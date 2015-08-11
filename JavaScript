@@ -1,0 +1,39 @@
+JavaScript Grammar
+ 
+JS 				-> 		ELT JS
+JS 				->
+ELT 			-> 		function id(OPTPARAMS) COMPOUNDSTMT
+ELT 			-> 		STMT;
+OPTPARAMS 		-> 		PARAMS
+OPTPARAMS 		-> 
+PARAMS 			-> 		id, PARAMS
+PARAMS 			-> 		id
+STMT 			-> 		id = EXP
+STMT 			-> 		return EXP
+STMT 			-> 		if EXP CSTMT
+STMT 			-> 		if EXP COMPOUNDSTMT else COMPOUNDSTMT
+COMPOUNDSTMT 	-> 		{ STMTS }
+STMTS 			-> 		STMT; STMTS
+STMTS 			->
+EXP 			->		id(OPTARGS)
+EXP 			->		id
+EXP 			->		num
+EXP 			->		string
+EXP 			->		true
+EXP 			->		false
+EXP 			->		EXP + EXP
+EXP 			->		EXP - EXP
+EXP 			->		EXP * EXP
+EXP 			->		EXP / EXP
+EXP 			->		EXP % EXP
+EXP 			->		EXP < EXP
+EXP 			->		EXP > EXP
+EXP 			->		EXP == EXP
+EXP 			->		EXP <= EXP
+EXP 			->		EXP >= EXP
+EXP 			->		EXP && EXP
+EXP 			->		EXP || EXP
+OPTARGS 		-> 		ARGS
+OPTARGS 		->
+ARGS 			-> 		EXP, ARGS
+ARGS 			-> 		EXP
